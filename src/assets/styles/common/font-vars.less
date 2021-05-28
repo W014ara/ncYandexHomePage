@@ -1,16 +1,49 @@
 // задаем основные параметры шрифта в виде миксинов и переменных
 
-//@font-family: NotoSans, sans-serif;
-//@font-normal-size: 14px;
-//
-//.font-base() {
-//    font-family: @font-family;
-//    font-weight: 400;
-//    font-style: normal;
-//    font-size: @font-normal-size;
-//}
-//
-//.font-light() {
-//    .font-base();
-//    font-weight: 300;
-//}
+
+//mixins for display
+.font-YaDisplayBold(@fontSize){
+    font-family: 'YaDisplay-Bold';
+    font-size: @fontSize * 1px;
+}
+
+.font-YaDisplayLight(@fontSize){
+    font-family: 'YaDisplay-Light';
+    font-size: @fontSize * 1px;
+}
+
+.font-YaDisplayRegular(@fontSize){
+    font-family: 'YaDisplay-Regular';
+    font-size: @fontSize * 1px;
+}
+
+.font-YaDisplayThin(@fontSize){
+    font-family: 'YaDisplay-Thin';
+    font-size: @fontSize * 1px;
+}
+
+//mixins for text
+.font-YaTextBold(@fontSize){
+    font-family: 'YaText-Bold';
+    font-size: @fontSize * 1px;
+}
+
+.font-YaTextLight(@fontSize){
+    font-family: 'YaDisplay-Light';
+    font-size: @fontSize * 1px;
+}
+
+.font-YaTextMedium(@fontSize){
+    font-family: 'YaDisplay-Medium';
+    font-size: @fontSize * 1px;
+}
+
+.font-YaTextRegular(@fontSize){
+    font-family: 'YaDisplay-Regular';
+    font-size: @fontSize * 1px;
+}
+
+.font-YaTextThin(@fontSize){
+    font-family: 'YaDisplay-Thin';
+    font-size: @fontSize * 1px;
+}

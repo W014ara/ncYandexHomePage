@@ -8,3 +8,14 @@
     left: 0;
     clip: rect(0 0 0 0);
 }
+
+.loginWidgetSettings(@height, @duration) when not (@height = 0){
+    position: relative;
+    transition: @duration *1s;
+    height: @height *1px;
+}
+
+.loginWidgetSettings(@height, @duration) when (@height = 0){
+    position: relative;
+    transition: @duration *1s;
+}

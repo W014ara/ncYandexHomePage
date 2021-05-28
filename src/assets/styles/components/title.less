@@ -1,0 +1,124 @@
+.title{
+    &-login{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+    &-mail{
+        transition:.2s;
+        &:hover{
+            cursor: pointer;
+            a{
+                color:@titleGeneralHighlight;
+            }
+        }
+    }
+
+    &-disk{
+        transition:.2s;
+        &:hover{
+            cursor: pointer;
+            a{
+                color:@titleGeneralHighlight;
+            }
+        }
+    }
+    &__link{
+        &-login{
+            .font-YaDisplayBold(16);
+            transition: .2s;
+            color:black;
+            a{
+                text-decoration: none;
+                text-align: center;
+                color:black;
+            }
+            a:active{
+                color:black;
+                border:0;
+                outline:none;
+            }
+            a:hover{
+                color: @titleGeneralHighlight;
+                span{
+                    color: @titleGeneralHighlight;
+                }
+            }
+        }
+        &-mail{
+            transition: .2s;
+            color:black;
+            a{
+                transition: .2s;
+                .font-YaTextRegular(16);
+                text-decoration: none;
+                text-align: center;
+                color:black;
+            }
+            a:active{
+                color:black;
+                border:0;
+                outline:none;
+            }
+            a:hover{
+                color: @titleGeneralHighlight;
+                span{
+                    color: @titleGeneralHighlight;
+                }
+            }
+        }
+        &-disk{
+            transition: .2s;
+            color:black;
+            a{
+                transition: .2s;
+                .font-YaTextRegular(16);
+                text-decoration: none;
+                text-align: center;
+                color:black;
+            }
+            a:active{
+                color:black;
+                border:0;
+                outline:none;
+            }
+            a:hover{
+                color: @titleGeneralHighlight;
+                span{
+                    color: @titleGeneralHighlight;
+                }
+            }
+        }
+        &-yaplus{
+            transition: .2s;
+            color:black;
+            a{
+                transition: .2s;
+                .font-YaTextRegular(16);
+                text-decoration: none;
+                text-align: center;
+                color:black;
+            }
+            a:active{
+                color:black;
+                border:0;
+                outline:none;
+            }
+            a:hover{
+                span{
+                    color: @titleGeneralHighlight;
+                }
+            }
+        }
+    }
+    &__linkHighlight{
+        &-login{
+            transition: .2s;
+            color: @titleGeneral;
+        }
+        &-mail{
+            transition: .2s;
+            .font-YaDisplayBold(16);
+        }
+    }
+}

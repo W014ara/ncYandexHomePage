@@ -1,0 +1,47 @@
+.widget{
+    box-shadow: 0 0 32px rgb(0 0 0 ~"/" 8%);
+    border-radius: 8px;
+    &__header{
+        &-login{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+    &__content{
+        &-login{
+            display: flex;
+            flex-direction: column;
+            gap:5px;
+        }
+        &-yaplus{
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            gap:5px;
+        }
+    }
+
+    &__avatar{
+        &-auth{
+            border-radius: 100px;
+            width: 34px;
+            height: 34px;
+            background-image: url("https://avatars.mds.yandex.net/get-yapic/43473/xLbgJI6tBIA5g2SvcQyBPDOaGY-1/islands-68");
+            background-size: cover;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &-yaplus{
+            border-radius: 100px;
+            width: 24px;
+            height: 24px;
+            background-image: url("https://yastatic.net/s3/home-static/_/b/q/uyhbff3FsvR1n380s8eZAkOtI.svg");
+            background-size: cover;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
