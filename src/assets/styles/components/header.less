@@ -1,0 +1,36 @@
+.header{
+    &-topheader{
+        margin-top: 5px;
+        line-height: 42px;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        &__geotimecontent{
+            display: flex;
+            flex-direction: row;
+            margin-left:20px;
+            gap:15px;
+        }
+        &__geolocation{
+            transition:.2s;
+            display: flex;
+            flex-direction: row;
+            gap:5px;
+            align-items:center;
+            color:@headerTextColor;
+            &:hover{
+                opacity:1;
+                color:@titleGeneralHighlight;
+                &>.title{
+                    a{
+                        color:@titleGeneralHighlight;
+                    }
+                }
+                cursor: pointer;
+            }
+        }
+        &__getcurrenttime{
+            margin:0;
+        }
+    }
+}

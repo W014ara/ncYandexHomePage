@@ -8,7 +8,8 @@ const gulp = require("gulp"),
   autoprefixer = require("gulp-autoprefixer"),
   browserSync = require("browser-sync").create(),
   rename = require("gulp-rename"),
-  modifyCssUrls = require('gulp-modify-css-urls');
+  modifyCssUrls = require('gulp-modify-css-urls'),
+  babel = require('gulp-babel');
 
 gulp.task("svgstore", function () {
   const svgs = gulp
@@ -40,6 +41,13 @@ gulp.task("svgstore", function () {
     .pipe(gulp.dest("./src"));
 });
 
+gulp.task("js", function() {
+  return src('./src/assets/script/*').pipe(babel({
+    presets: ['@babel/env']
+    }))
+    .pipe(dest('./dist'))
+})
+
 
 gulp.task("font", function() {
   return src('./src/assets/font/*')
@@ -56,8 +64,8 @@ gulp.task("less", function () {
       relativeUrls: false,
       rebase: false
     })).pipe(
-      autoprefixer({
-        cascade: false,
+      autoprefixer('last 2 versions',{
+        cascade: false
       })
     ).pipe(modifyCssUrls({
       modify: function (url, filePath) {
@@ -81,14 +89,16 @@ gulp.task("serve", function () {
     },
   });
 
+  gulp.watch("./src/assets/script/**/*").on("change", series("js"));
   gulp.watch("./src/assets/styles/**/*.less").on("change", series("less"));
   gulp.watch("./src/index.html").on("change", series("html"));
 
   gulp.watch("./src/assets/styles/**/*.less").on("change", browserSync.reload);
+  gulp.watch("./src/assets/script/**/*").on("change", browserSync.reload);
   gulp.watch("./dist/style.css").on("change", browserSync.reload);
   gulp.watch("./dist/index.html").on("change", browserSync.reload);
 });
 
-gulp.task("build", series("font", "img", "svgstore", "less","html"));
+gulp.task("build", series("font", "img", "svgstore", "js", "less","html"));
 
-gulp.task("default", series("svgstore", "font", "img", parallel("html", "less"), "serve"));
+gulp.task("default", series("svgstore", "font", "img", parallel("html", "less", "js"), "serve"));
