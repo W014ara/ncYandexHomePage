@@ -9,4 +9,40 @@
         background-size: cover;
         opacity: 0;
     }
+    &-settings{
+        transition:.5s;
+        position:absolute;
+        right: 2px;
+        width: 24px;
+        height: 24px;
+        background-image: url("https://yastatic.net/s3/home-static/_/k/8/gsSjWTalZ0Zl-yefsGisz0YJA.svg");
+        background-size: cover;
+        opacity: 0;
+    }
+    &-covidLoginChanger{
+        width: 4px;
+        height: 4px;
+        opacity: .25;
+        border-radius: 100%;
+        background: currentColor;
+        transition: opacity .15s ease-in-out;
+        &:hover{
+            opacity: .8;
+        }
+        &-active{
+            opacity: .8;
+        }
+    }
+    &-changeTrain{
+        transition:.2s;
+        width: 24px;
+        height: 24px;
+        opacity: 0;
+        background: url("https://yastatic.net/s3/home-static/_/r/J/SlrscamjPu-VVgfX3W1z6Hk5s.svg") no-repeat;
+        background-size: cover;
+    }
+    &__covidmarkerimg{
+        width: 40px;
+        height: 15px;
+    }
 }

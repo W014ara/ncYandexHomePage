@@ -62,10 +62,8 @@ gulp.task("less", function () {
     ).pipe(modifyCssUrls({
       modify: function (url, filePath) {
         if(/\.\.?\//.test(url) === true){
-          console.log(url);
           return 'src/' + url.replace(/(\.\.\/)+/, '');
         }
-        console.log(false);
         return url;
       }
     })).pipe(dest("./dist"));

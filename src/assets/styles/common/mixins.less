@@ -19,3 +19,17 @@
     position: relative;
     transition: @duration *1s;
 }
+
+.containerLoginSettings(@marginRightSetting){
+    display: flex;
+    &:hover{
+        &>.widget{
+            cursor: default;
+            margin-right: @marginRightSetting * 1px;
+        }
+        &>.marker{
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+}

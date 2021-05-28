@@ -1,0 +1,23 @@
+.trainlist{
+    display:flex;
+    justify-content:space-evenly;
+    margin:0;
+    padding: 0;
+    &__item{
+        display: inline;
+        list-style: none;
+    }
+    &__link{
+        .font-YaTextMedium(12);
+        text-decoration: none;
+        color:black;
+        transition: .2s;
+        &:active{
+            color:black;
+            text-decoration: none;
+        }
+        &:hover{
+            color:@titleGeneral;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="covid-speed-histogram desk-notif-card__covid-histogram" width="41">
+    <rect x="0" y="13.4%" width="2" height="86.6%" rx="1.5" ry="1.5" fill="#e95b3b">
+    </rect>
+    <rect x="3" y="13.3%" width="2" height="86.7%" rx="1.5" ry="1.5" fill="#e95b3b">
+    </rect>
+    <rect x="6" y="9.5%" width="2" height="90.5%" rx="1.5" ry="1.5" fill="#d1352b">
+    </rect>
+    <rect x="9" y="8.5%" width="2" height="91.5%" rx="1.5" ry="1.5" fill="#d1352b">
+    </rect>
+    <rect x="12" y="10.1%" width="2" height="89.9%" rx="1.5" ry="1.5" fill="#d1352b">
+    </rect>
+    <rect x="15" y="6.2%" width="2" height="93.8%" rx="1.5" ry="1.5" fill="#d1352b">
+    </rect>
+    <rect x="18" y="2.8%" width="2" height="97.2%" rx="1.5" ry="1.5" fill="#a2202c">
+    </rect>
+    <rect x="21" y="0.0%" width="2" height="100.0%" rx="1.5" ry="1.5" fill="#a2202c">
+    </rect>
+    <rect x="24" y="0.8%" width="2" height="99.2%" rx="1.5" ry="1.5" fill="#a2202c">
+    </rect>
+    <rect x="27" y="1.2%" width="2" height="98.8%" rx="1.5" ry="1.5" fill="#a2202c">
+    </rect>
+    <rect x="30" y="5.3%" width="2" height="94.7%" rx="1.5" ry="1.5" fill="#a2202c">
+    </rect>
+    <rect x="33" y="4.0%" width="2" height="96.0%" rx="1.5" ry="1.5" fill="#a2202c">
+    </rect>
+    <rect x="36" y="5.2%" width="2" height="94.8%" rx="1.5" ry="1.5" fill="#a2202c">
+    </rect>
+    <rect x="39" y="3.7%" width="2" height="96.3%" rx="1.5" ry="1.5" fill="#a2202c">
+    </rect>
+</svg>

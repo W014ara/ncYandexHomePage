@@ -1,14 +1,25 @@
 .container{
     &-yaplus{
-        display: flex;
+        .containerLoginSettings(25);
+    }
+    &-covidstatus{
+        .containerLoginSettings(25);
+    }
+    &-weather{
+        .containerLoginSettings(25);
+    }
+    &-weatherfull{
+        .containerLoginSettings(25);
+    }
+    &-train{
+        .containerLoginSettings(25);
         &:hover{
-            &>.widget{
-                cursor: pointer;
-                margin-right: 50px;
-            }
-            &>.marker{
-                cursor: pointer;
-                opacity: 1;
+            #marker-changeTrain{
+                opacity: .3;
+                &:hover{
+                    cursor: pointer;
+                    opacity:1;
+                }
             }
         }
     }
