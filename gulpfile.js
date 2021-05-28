@@ -41,31 +41,31 @@ gulp.task("svgstore", function () {
 });
 
 
-gulp.task('font', function() {
+gulp.task("font", function() {
   return src('./src/assets/font/*')
     .pipe(dest('dist/src/font'))
 })
 
-gulp.task('img', function() {
+gulp.task("img", function() {
   return src('./src/assets/img/*')
     .pipe(dest('dist/src/img'))
 })
 
 gulp.task("less", function () {
-  return src("./src/assets/styles/main.less")
-    .pipe(less({
+  return src("./src/assets/styles/main.less").pipe(less({
       relativeUrls: false,
       rebase: false
-    }))
-    .pipe(
+    })).pipe(
       autoprefixer({
         cascade: false,
       })
     ).pipe(modifyCssUrls({
       modify: function (url, filePath) {
-        if(/\.\.?/.test(url)){
+        if(/\.\.?\//.test(url) === true){
+          console.log(url);
           return 'src/' + url.replace(/(\.\.\/)+/, '');
         }
+        console.log(false);
         return url;
       }
     })).pipe(dest("./dist"));
