@@ -1,6 +1,17 @@
 const loginBlock = document.querySelector('.login__wrapper');
 const upperheaderBlock = document.querySelector('.header-topheader');
 const currentDay = document.querySelector('.title-geocurrenttime');
+const searchInputInput = document.querySelector('#yasearch');
+const searthInput = document.querySelector('.container-yandexsearch');
+const searchInputBtn = document.querySelector('.container-yandexsearch__searchbtn');
+
+searchInputInput.addEventListener("mouseover", (e)=>{
+    searthInput.style.backgroundColor = "#fc0";
+})
+
+searchInputBtn.addEventListener("mouseover", (e)=>{
+    searthInput.style.backgroundColor = "rgb(230, 184, 3)";
+})
 
 let dayObj = {
     month:{

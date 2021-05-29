@@ -51,8 +51,9 @@
         flex-direction: row;
         max-width:960px;
         margin:0 auto;
-        gap:25px;
+        gap:15px;
         padding-left: 25px;
+        align-items:center;
     }
     &-services{
         display: flex;
@@ -60,6 +61,94 @@
         max-width:950px;
         margin:0 auto;
         margin-top: 10px;
-        gap:42px;
+        gap:50px;
+    }
+    &-yandexsearch{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        max-width:950px;
+        height:38px;
+        margin:0 auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 2px solid @yandexYellowColor;
+        background:@yandexYellowColor;
+        transition:.2s;
+        &:hover{
+            background:@yandexYellowColorHighligh;
+        }
+        &__logo{
+            position: absolute;
+            width:140px;
+            height:100px;
+            margin-left: -142px;
+            margin-top: -55px;
+            background:url("../../img/yandex-logo.svg") no-repeat;
+            background-size: cover;
+        }
+        &__search{
+            width:95%;
+            height:34px;
+            border-radius: 10px;
+            border:none;
+            .font-YaTextRegular(18);
+            padding-left: 10px;
+            &:focus{
+                border: none;
+                outline: none;
+            }
+            &:active{
+                border: none;
+                outline: none;
+            }
+            &::placeholder{
+                opacity: .5;
+            }
+            z-index: 99;
+        }
+        &__searchbtn{
+            position: relative;
+            width:90px;
+            right:0%;
+            z-index: 1;
+            border-radius: 10px;
+            background:@yandexYellowColor;
+            border:none;
+            outline: none;
+            transition:.2s;
+            .font-YaTextRegular(18);
+            &:hover{
+                cursor: pointer;
+                background: @yandexYellowColorHighligh;
+            }
+        }
+    }
+    &-downloadyabrowser{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        max-width:925px;
+        height:38px;
+        margin:0 auto;
+        justify-content:flex-end;
+        align-items:center;
+        &__icon{
+            width:32px;
+            height:18px;
+            background: url("https://avatars.mds.yandex.net/get-banana/68433/x25BcgYgv4KiPF1XmJiQcOTk1_banana_20161021_18_32_png_x282x29.png/optimize") no-repeat;
+            background-size: cover;
+        }
+    }
+    &-advertaisement{
+        max-width:950px;
+        height:115px;
+        margin:0 auto;
+        background: url("../../img/advertisement1.png") no-repeat;
+        background-size: cover;
+        transition: .2s;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
