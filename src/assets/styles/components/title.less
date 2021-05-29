@@ -72,26 +72,26 @@
     &-newsblock{
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap:15px;
-        &:hover{
-            &>div{
-                opacity: .15;
-                &:hover{
-                    opacity: 1;
-                }
-            }
-        }
+    }
+
+    &-trafficblock{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:15px;
     }
 
     &-newsblockcontent{
         display: flex;
         flex-direction: column;
-        gap:10px;
+        gap:7px;
         &__element{
             display: flex;
             flex-direction: row;
-            gap:7px;
-            max-width: 570px;
+            gap:10px;
+            max-width: 580px;
         }
     }
 
@@ -308,12 +308,37 @@
                 outline:none;
             }
         }
+
+        &-trafficblock{
+            .font-YaDisplayRegular(20);
+            font-weight: bolder;
+            color:@newsblurColor;
+            text-decoration: none;
+            transition:.2s;
+            &:hover{
+                color:@titleGeneralHighlight;
+            }
+            &:active{
+                color:@newsblurColor;
+                text-decoration:none;
+                border:none;
+                outline:none;
+            }
+        }
         &-general{
             color:@newshightlightColor;
             &:active{
                 color:@newshightlightColor;
             }
         }
+
+        &-default{
+            display:flex;
+            color:black;
+            .font-YaTextThin(15);
+            text-align: center;
+        }
+
         &-newsblockcontent{
             .font-YaTextRegular(15);
             line-height: 20px;
@@ -328,6 +353,42 @@
                 text-decoration:none;
                 border:none;
                 outline:none;
+            }
+        }
+        &-subtitle{
+            margin:0;
+            margin-top: 5px;
+            text-align: center;
+            font-style: normal;
+            .font-YaTextThin(14);
+            color:@newshightlightColor;
+        }
+        &-rate{
+            text-decoration: none;
+            color:black;
+            .font-YaTextMedium(14);
+            transition: .2s;
+            &:hover{
+                color:@titleGeneralHighlight;
+            }
+            &:active{
+                outline:none;
+                border:none;
+            }
+        }
+        &-services{
+            text-decoration: none;
+            color:black;
+            .font-YaDisplayLight(12);
+            font-weight: bolder;
+            text-align: center;
+            transition: .2s;
+            &:hover{
+                color:@titleGeneralHighlight;
+            }
+            &:active{
+                outline:none;
+                border:none;
             }
         }
     }

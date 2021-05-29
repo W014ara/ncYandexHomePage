@@ -1,0 +1,109 @@
+.greaticon{
+    &-weather{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        align-items:center;
+        justify-content:space-between;
+        gap:8px;
+        transition:.2s;
+        &:hover{
+            cursor: pointer;
+            &>a{
+                color:@titleGeneralHighlight;
+            }
+        }
+        &__icon{
+            width:42px;
+            height:40px;
+            background: url("../../img/greaticon-weather.PNG") no-repeat;
+            background-size: cover;
+        }
+        &__text{
+            color:black;
+            text-decoration: none;
+            .font-YaDisplayRegular(30);
+            transition:.2s;
+            &:active{
+                color:black;
+                outline:none;
+                border:none;
+            }
+        }
+    }
+
+    &-traffic{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        align-items:center;
+        gap:8px;
+        transition:.2s;
+        &:hover{
+            cursor: pointer;
+            &>a{
+                color:@titleGeneralHighlight;
+            }
+        }
+        &__icon{
+            width:42px;
+            height:40px;
+            background: url("../../img/greaticon-traffic-yellow.PNG") no-repeat;
+            background-size: cover;
+        }
+        &__text{
+            color:black;
+            text-decoration: none;
+            .font-YaDisplayRegular(30);
+            transition:.2s;
+            &:active{
+                color:black;
+                outline:none;
+                border:none;
+            }
+        }
+        &__subtext{
+            display:flex;
+            padding-top:7px;
+            justify-content: center;
+        }
+    }
+
+
+    &-weathersmaller{
+        display: flex;
+        flex-direction: column;
+        &__subcontent{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            gap:5px;
+        }
+        &__title{
+            &-main{
+                .font-YaDisplayLight(10);
+                opacity: .5;
+            }
+        }
+        &__icon{
+            width:12px;
+            height:12px;
+            background: url("../../img/greaticon-weather-smaller-rain.PNG") no-repeat;
+            background-size: cover;
+        }
+        &__subtitle{
+            .font-YaDisplayLight(12);
+            color:black;
+            text-decoration: none;
+            transition:.2s;
+            &:hover{
+                color:@titleGeneralHighlight;
+            }
+            &:active{
+                color:black;
+                outline:none;
+                border:none;
+            }
+        }
+    }
+}

@@ -93,6 +93,7 @@ gulp.task("serve", function () {
   gulp.watch("./src/assets/styles/**/*.less").on("change", series("less"));
   gulp.watch("./src/index.html").on("change", series("html"));
 
+  gulp.watch("./src/assets/img/*").on("change", browserSync.reload);
   gulp.watch("./src/assets/styles/**/*.less").on("change", browserSync.reload);
   gulp.watch("./src/assets/script/**/*").on("change", browserSync.reload);
   gulp.watch("./dist/style.css").on("change", browserSync.reload);

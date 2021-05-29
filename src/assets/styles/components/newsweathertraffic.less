@@ -3,17 +3,56 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 20px;
+        padding-left: 30px;
     }
     &__newsblock{
         display: flex;
         flex-direction: column;
         gap:10px;
+        &:hover{
+            #marker-settingsNews{
+                opacity: .15;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
     }
     &__weathertrafficblock{
         width:35%;
         display: flex;
         flex-direction: column;
-        gap:10px;
+        gap:15px;
+    }
+    &__weatherblock{
+        display: flex;
+        flex-direction: column;
+        &:hover{
+            #marker-settingsWeather{
+                opacity: .15;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__trafficblock{
+        display: flex;
+        flex-direction: column;
+        &:hover{
+            #marker-settingsWeather{
+                opacity: .15;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__weathercontent{
+        display: flex;
+        flex-direction: row;
+        gap:15px;
     }
 }
