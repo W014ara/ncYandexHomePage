@@ -67,8 +67,31 @@
                 color:@titleGeneralHighlight;
             }
         }
-        &__timedelimiter{
+    }
 
+    &-newsblock{
+        display: flex;
+        flex-direction: row;
+        gap:15px;
+        &:hover{
+            &>div{
+                opacity: .15;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &-newsblockcontent{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        &__element{
+            display: flex;
+            flex-direction: row;
+            gap:7px;
+            max-width: 570px;
         }
     }
 
@@ -207,6 +230,8 @@
             }
         }
 
+
+
     }
 
     &__currentLink{
@@ -262,6 +287,44 @@
             text-decoration: none;
             &:active{
                 color:black;
+                text-decoration:none;
+                border:none;
+                outline:none;
+            }
+        }
+        &-newsblock{
+            .font-YaDisplayRegular(20);
+            font-weight: bolder;
+            color:@newsblurColor;
+            text-decoration: none;
+            transition:.2s;
+            &:hover{
+                color:@titleGeneralHighlight;
+            }
+            &:active{
+                color:@newsblurColor;
+                text-decoration:none;
+                border:none;
+                outline:none;
+            }
+        }
+        &-general{
+            color:@newshightlightColor;
+            &:active{
+                color:@newshightlightColor;
+            }
+        }
+        &-newsblockcontent{
+            .font-YaTextRegular(15);
+            line-height: 20px;
+            color:black;
+            text-decoration: none;
+            transition:.2s;
+            &:hover{
+                color:@titleGeneralHighlight;
+            }
+            &:active{
+                color:@newsblurColor;
                 text-decoration:none;
                 border:none;
                 outline:none;

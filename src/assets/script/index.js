@@ -23,7 +23,7 @@ let dayObj = {
         3:'ср',
         4:'чт',
         5:'пт',
-        6:'суббота',
+        6:'сб',
         7:'вс'
     },
     monthDay:new Date().getDate(),
@@ -73,7 +73,9 @@ setInterval((e) => {
 }
 
 
-document.addEventListener("DOMContentLoaded", setNewBlockSize(upperheaderBlock));
+document.addEventListener("DOMContentLoaded", (e) => {
+    setNewBlockSize(upperheaderBlock);
+});
 
 window.addEventListener('resize', (e) => {
     setNewBlockSize(upperheaderBlock);
