@@ -424,4 +424,32 @@
         }
     }
 
+    &-dzen{
+        display:flex;
+        align-items: center;
+        gap:10px;
+        &__name{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            gap:5px;
+            color:black;
+            outline:none;
+            border:none;
+            text-decoration: none;
+            transition: .2s;
+            .font-YaTextBold(16);
+            &:hover{
+                color:@titleGeneralHighlight;
+            }
+            &:active{
+                outline:none;
+                border:none;
+            }
+        }
+        &__subtitle{
+            padding-top: 3px;
+            .font-YaTextThin(12);
+        }
+    }
 }

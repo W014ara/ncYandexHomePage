@@ -143,4 +143,25 @@
             cursor: pointer;
         }
     }
+    &-dzen{
+        width:20px;
+        height:20px;
+        background: url("https://yastatic.net/s3/home/feed/services/icons/zen1.svg") no-repeat;
+        background-size: cover;
+        transition: .2s;
+        &:hover{
+            cursor: pointer;
+            &:before{
+                background:rgba(0,0,0,.3);
+            }
+        }
+        &:before{
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            transition: background-color .15s ease-out;
+        }
+    }
 }

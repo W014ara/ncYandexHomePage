@@ -5,12 +5,20 @@ const searchInputInput = document.querySelector('#yasearch');
 const searthInput = document.querySelector('.container-yandexsearch');
 const searchInputBtn = document.querySelector('.container-yandexsearch__searchbtn');
 
+const yandexYellowColor = "#fc0";
+const yandexYellowColorHighligh = "rgb(238, 191, 4)";
+
+
 searchInputInput.addEventListener("mouseover", (e)=>{
-    searthInput.style.backgroundColor = "#fc0";
+    searthInput.style.backgroundColor = yandexYellowColor;
 })
 
 searchInputBtn.addEventListener("mouseover", (e)=>{
-    searthInput.style.backgroundColor = "rgb(230, 184, 3)";
+    searthInput.style.backgroundColor = yandexYellowColorHighligh;
+})
+
+searchInputBtn.addEventListener("mouseout", (e)=>{
+    searthInput.style.backgroundColor = yandexYellowColor;
 })
 
 let dayObj = {
