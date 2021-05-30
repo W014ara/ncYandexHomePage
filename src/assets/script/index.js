@@ -37,13 +37,13 @@ let dayObj = {
         12:'декабря'
     },
     weekDay:{
+        0:'вс',
         1:'пн',
         2:'вт',
         3:'ср',
         4:'чт',
         5:'пт',
-        6:'сб',
-        7:'вс'
+        6:'сб'
     },
     monthDay:new Date().getDate(),
     year:new Date().getFullYear()
@@ -55,6 +55,7 @@ setInterval((e) => {
     let currentDayNumber = new Date().getDay();
     let currentHours = new Date().getHours();
     let currentMinutes = new Date().getMinutes();
+    console.log(currentDayNumber);
     if(!fadeFlag){
         //: появляется
         currentDay.childNodes[1].innerHTML = `<h1 class="title-geocurrenttime__time">${dayObj.monthDay} ${dayObj.month[currentMonth]}, ${dayObj.weekDay[currentDayNumber]} <a href="" class="title title-geocurrenttime__timechanger">${addZeroPad(currentHours)}<span class="title title-geocurrenttime__timedelimiter">&nbsp;</span>${addZeroPad(currentMinutes)}</a></h1>`
