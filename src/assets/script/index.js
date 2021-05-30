@@ -55,7 +55,6 @@ setInterval((e) => {
     let currentDayNumber = new Date().getDay();
     let currentHours = new Date().getHours();
     let currentMinutes = new Date().getMinutes();
-    console.log(currentDayNumber);
     if(!fadeFlag){
         //: появляется
         currentDay.childNodes[1].innerHTML = `<h1 class="title-geocurrenttime__time">${dayObj.monthDay} ${dayObj.month[currentMonth]}, ${dayObj.weekDay[currentDayNumber]} <a href="" class="title title-geocurrenttime__timechanger">${addZeroPad(currentHours)}<span class="title title-geocurrenttime__timedelimiter">&nbsp;</span>${addZeroPad(currentMinutes)}</a></h1>`
