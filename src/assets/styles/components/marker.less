@@ -1,4 +1,54 @@
 .marker{
+    &-geolocation{
+        &__icon{
+            width:15px;
+            height:15px;
+        }
+    }
+
+    &-notify{
+        display: flex;
+        margin-top: -7px;
+        padding:0;
+        box-sizing: border-box;
+        &__icon{
+            width:36px;
+            height:36px;
+            opacity: .3;
+            transition:.2s;
+            &:hover{
+                cursor: pointer;
+                opacity: 1;
+            }
+        }
+    }
+
+    &-covidstatus{
+        &__icon{
+            width: 40px;
+            height: 15px;
+        }
+    }
+
+    &-covidLoginChanger{
+        width: 4px;
+        height: 4px;
+        opacity: .25;
+        border-radius: 100%;
+        background: currentColor;
+        transition: opacity .15s ease-in-out;
+        &:hover{
+            opacity: .8;
+        }
+        ._active{
+            opacity: .8;
+        }
+    }
+
+    &-newsconenticon{
+        margin-top: 2px;
+    }
+
     &-close{
         transition:.5s;
         position:absolute;
@@ -19,45 +69,31 @@
         &:hover{
             cursor: pointer;
         }
-    }
-
-    &-settingsrate{
-        opacity: .5;
-        &:hover{
-            opacity: .7;
+        &._settingsWidget{
+            position:absolute;
+            right: 2px;
+            opacity: 0;
+        }
+        &._settingsNews{
+            display: flex;
+            align-self: center;
+            width: 16px;
+            height: 16px;
+            opacity: 0;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z' fill='%23000' fill-rule='evenodd'/%3E%3C/svg%3E ");
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &._settingsrate{
+            opacity: .5;
+            &:hover{
+                opacity: .7;
+            }
         }
     }
 
-    &-settingsWidget{
-        position:absolute;
-        right: 2px;
-        opacity: 0;
-    }
-    &-settingsNews{
-        display: flex;
-        align-self: center;
-        width: 16px;
-        height: 16px;
-        opacity: 0;
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z' fill='%23000' fill-rule='evenodd'/%3E%3C/svg%3E ");
-        &:hover{
-            cursor: pointer;
-        }
-    }
-    &-covidLoginChanger{
-        width: 4px;
-        height: 4px;
-        opacity: .25;
-        border-radius: 100%;
-        background: currentColor;
-        transition: opacity .15s ease-in-out;
-        &:hover{
-            opacity: .8;
-        }
-        &-active{
-            opacity: .8;
-        }
-    }
+
     &-changeTrain{
         transition:.2s;
         width: 24px;
@@ -66,30 +102,7 @@
         background: url("https://yastatic.net/s3/home-static/_/r/J/SlrscamjPu-VVgfX3W1z6Hk5s.svg") no-repeat;
         background-size: cover;
     }
-    &__covidmarkerimg{
-        width: 40px;
-        height: 15px;
-    }
-    &__geolocationimg{
-        width:15px;
-        height:15px;
-    }
-    &-notify{
-        display: flex;
-        margin-top: -7px;
-        padding:0;
-        box-sizing: border-box;
-    }
-    &__notify{
-        width:36px;
-        height:36px;
-        opacity: .3;
-        transition:.2s;
-        &:hover{
-            cursor: pointer;
-            opacity: 1;
-        }
-    }
+
     &-shop{
         display: flex;
         align-items: center;
@@ -105,13 +118,60 @@
         }
     }
 
-    &-newsconenticon{
-        margin-top: 2px;
-    }
-    &-element{
+    &-apps{
         transition: .2s;
         width:44px;
         height:44px;
+        &._yapromo{
+            position: relative;
+            background: url("https://yastatic.net/s3/home/services/block/uslugi_new_v2.svg") no-repeat;
+            background-size: cover;
+        }
+        &._yamarket{
+            position: relative;
+            background: url("https://yastatic.net/s3/home/services/block/market_4.svg") no-repeat;
+            background-size: cover;
+        }
+        &._yavideo{
+            position: relative;
+            background: url("https://yastatic.net/s3/home/services/block/video.svg") no-repeat;
+            background-size: cover;
+        }
+        &._yaimages{
+            position: relative;
+            background: url("https://yastatic.net/s3/home/services/block/kartinki.svg") no-repeat;
+            background-size: cover;
+        }
+        &._yanews{
+            position: relative;
+            background: url("https://yastatic.net/s3/home/services/block/news.svg") no-repeat;
+            background-size: cover;
+        }
+        &._yamaps{
+            position: relative;
+            background: url("https://yastatic.net/s3/home/services/block/maps.svg") no-repeat;
+            background-size: cover;
+        }
+        &._yatranslate{
+            position: relative;
+            background: url("https://yastatic.net/s3/home/services/block/translate.svg") no-repeat;
+            background-size: cover;
+        }
+        &._yamusic{
+            position: relative;
+            background: url("https://yastatic.net/s3/home/services/block/music2.svg") no-repeat;
+            background-size: cover;
+        }
+        &._yaprogramm{
+            position: relative;
+            background: url("https://yastatic.net/s3/home/services/block/tv.svg") no-repeat;
+            background-size: cover;
+        }
+        &._yamore{
+            position: relative;
+            background: url("../../img/services-other.PNG") no-repeat;
+            background-size: cover;
+        }
     }
     &-microphonesearch{
         position: absolute;

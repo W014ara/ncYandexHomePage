@@ -1,4 +1,4 @@
-const loginBlock = document.querySelector('.login__wrapper');
+const loginBlock = document.querySelector('.widgets__wrapper');
 const upperheaderBlock = document.querySelector('.header-topheader');
 const currentDay = document.querySelector('.title-geocurrenttime');
 const searchInputInput = document.querySelector('#yasearch');

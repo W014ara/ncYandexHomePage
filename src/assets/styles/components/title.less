@@ -96,8 +96,8 @@
     }
 
 
-    &__link{
-        &-login{
+    &-link{
+        &._login{
             .font-YaDisplayBold(16);
             transition: .2s;
             color:black;
@@ -118,7 +118,7 @@
                 }
             }
         }
-        &-mail{
+        &._mail{
             transition: .2s;
             color:black;
             a{
@@ -140,7 +140,7 @@
                 }
             }
         }
-        &-disk{
+        &._disk{
             transition: .2s;
             color:black;
             a{
@@ -162,7 +162,7 @@
                 }
             }
         }
-        &-yaplus{
+        &._yaplus{
             transition: .2s;
             color:black;
             a{
@@ -184,7 +184,7 @@
             }
         }
 
-        &-covidstatusMain{
+        &._covidstatusMain{
             margin-top:-10px;
             transition: .2s;
             color:black;
@@ -208,7 +208,7 @@
             }
         }
 
-        &-weather{
+        &._weather{
             transition: .2s;
             color:black;
             a{
@@ -234,8 +234,8 @@
 
     }
 
-    &__currentLink{
-        &-covidstatus{
+    &-currentLink{
+        &._covidstatus{
             .font-YaTextRegular(14);
             color:black;
             text-decoration: none;
@@ -245,7 +245,7 @@
                 outline:none;
             }
         }
-        &-weatherfull{
+        &._weatherfull{
             .font-YaTextMedium(15);
             color:black;
             text-decoration: none;
@@ -255,7 +255,7 @@
                 outline:none;
             }
         }
-        &-weatherSubBtn{
+        &._weatherSubBtn{
             display:flex;
             justify-content: center;
             align-items: center;
@@ -281,7 +281,7 @@
                 outline:none;
             }
         }
-        &-train{
+        &._train{
             .font-YaTextMedium(15);
             color:black;
             text-decoration: none;
@@ -292,7 +292,7 @@
                 outline:none;
             }
         }
-        &-newsblock{
+        &._newsblock{
             .font-YaDisplayRegular(20);
             font-weight: bolder;
             color:@newsblurColor;
@@ -309,7 +309,7 @@
             }
         }
 
-        &-trafficblock{
+        &._trafficblock{
             .font-YaDisplayRegular(20);
             font-weight: bolder;
             color:@newsblurColor;
@@ -325,21 +325,21 @@
                 outline:none;
             }
         }
-        &-general{
+        &._general{
             color:@newshightlightColor;
             &:active{
                 color:@newshightlightColor;
             }
         }
 
-        &-default{
+        &._default{
             display:flex;
             color:black;
             .font-YaTextThin(15);
             text-align: center;
         }
 
-        &-newsblockcontent{
+        &._newsblockcontent{
             .font-YaTextRegular(15);
             line-height: 20px;
             color:black;
@@ -355,7 +355,7 @@
                 outline:none;
             }
         }
-        &-subtitle{
+        &._subtitle{
             margin:0;
             margin-top: 5px;
             text-align: center;
@@ -363,7 +363,7 @@
             .font-YaTextThin(14);
             color:@newshightlightColor;
         }
-        &-rate{
+        &._rate{
             text-decoration: none;
             color:black;
             .font-YaTextMedium(14);
@@ -376,7 +376,7 @@
                 border:none;
             }
         }
-        &-services{
+        &._services{
             text-decoration: none;
             color:black;
             .font-YaDisplayLight(12);
@@ -391,7 +391,7 @@
                 border:none;
             }
         }
-        &-downloadyabrowser{
+        &._downloadyabrowser{
             display: flex;
             align-items: center;
             gap:5px;

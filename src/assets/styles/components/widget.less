@@ -1,8 +1,46 @@
 .widget{
     box-shadow: 0 0 32px rgb(0 0 0 ~"/" 8%);
     border-radius: 8px;
+
+    &._login{
+        padding: 12px 14px;
+        height: 85px;
+        display:flex;
+        flex-direction: column;
+    }
+
+    &._yaplus{
+        padding: 0px 14px;
+        .loginWidgetSettings(45, .2);
+    }
+
+    &._covidstatus{
+        padding: 12px 14px;
+        .loginWidgetSettings(38, .2);
+    }
+
+    &._weather{
+        display: flex;
+        flex-direction: row;
+        padding: 12px 14px;
+        .loginWidgetSettings(38, .2);
+    }
+
+    &._weatherfull{
+        padding: 12px 14px;
+        .loginWidgetSettings(100, .2);
+    }
+    &._train{
+        padding: 12px 14px;
+        .loginWidgetSettings(55, .2);
+    }
+    &._covidstatus{
+        display: flex;
+        flex-direction: column;
+    }
+
     &__header{
-        &-login{
+        &._login{
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
