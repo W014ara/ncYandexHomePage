@@ -4,6 +4,9 @@ const currentDay = document.querySelector('.title-geocurrenttime');
 const searchInputInput = document.querySelector('#yasearch');
 const searthInput = document.querySelector('.container-yandexsearch');
 const searchInputBtn = document.querySelector('.container-yandexsearch__searchbtn');
+const dzen = document.querySelector(".dzen__table");
+const dzen__block = `<div class="dzen__item dzen__item-col2"></div>
+                    <div class="dzen__item dzen__item-col2 dzen__item-style2"></div>`
 
 const yandexYellowColor = "#fc0";
 const yandexYellowColorHighligh = "rgb(238, 191, 4)";
@@ -99,3 +102,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
 window.addEventListener('resize', (e) => {
     setNewBlockSize(upperheaderBlock);
 })
+
+window.addEventListener("scroll", (e)=>{
+    if(window.scrollY + document.body.offsetHeight >= document.body.scrollHeight){
+        setTimeout(() => {
+            dzen.insertAdjacentHTML("beforeend", dzen__block);
+        }, 500);
+    }
+})
+
