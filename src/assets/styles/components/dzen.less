@@ -27,17 +27,133 @@
             background-size: cover;
         }
         &-col2{
-            padding:8px 10px 8px 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap:10px;
+            padding:8px 0px 8px 0px;
             width:560px;
-            height:493px;
-            background: url("../../img/card-1.PNG") no-repeat;
+            height:510px;
             background-size: cover;
         }
         &-style2{
             width:364px;
-            height:493px;
-            background: url("../../img/card-2.PNG") no-repeat;
+            height:510px;
             background-size: cover;
+        }
+        &-mainHeader{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding:0px 10px 0px 16px;
+        }
+        &-mainLink{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            padding-top: 10px;
+            color:black;
+            text-decoration: none;
+            &:active{
+                text-decoration: none;
+            }
+        }
+        &-subscribe{
+            display: flex;
+            flex-direction: column;
+            padding:0;
+            margin:0;
+            gap:2px;
+            justify-content:center;
+            &-text{
+                .font-YaTextMedium(14);
+                color:black;
+                margin:0;
+            }
+            &-info{
+                .font-YaTextLight(12);
+                color:grey;
+                margin:0;
+                opacity: .66;
+            }
+        }
+        &-functional{
+            display: flex;
+            flex-direction: row;
+            gap:5px;
+        }
+        &-splash{
+            width:550px;
+            height:267px;
+            border-radius: 10px;
+            align-self: center;
+            &._style2{
+                width:350px;
+                height:215px;
+            }
+        }
+        &-maincontent{
+            display: flex;
+            flex-direction: column;
+            gap:7px;
+            margin-top: -5px;
+            padding: 0px 10px 0px 16px;
+            &-text{
+                margin:0;
+                .font-YaTextThin(14);
+                font-weight: 800;
+                letter-spacing:.005em;
+                line-height: 1.25em;
+                opacity: .95;
+            }
+            &-time{
+                margin:0;
+                margin-top: 1px;
+                .font-YaTextThin(14);
+                font-weight: 800;
+                opacity: .66;
+            }
+        }
+        &-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            padding: 0px 10px 0px 16px;
+            &-comment{
+                color:black;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                width:162px;
+                height:36px;
+                gap:5px;
+                border:none;
+                outline:none;
+                text-decoration: none;
+                border-radius:20px;
+                transition: .2s;
+                background:white;
+                &:hover{
+                    cursor: pointer;
+                    background: rgb(236, 236, 236);
+                }
+                &:active{
+                    color:black;
+                }
+                &._disabled{
+                    visibility:hidden;
+                }
+            }
+            &-text{
+                margin:0;
+                .font-YaTextThin(13);
+                letter-spacing:.05em;
+                font-weight: 800;
+            }
+            &-btn{
+                display: flex;
+            }
         }
     }
 }

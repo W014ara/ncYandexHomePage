@@ -223,5 +223,41 @@
             border-radius: 50%;
             transition: background-color .15s ease-out;
         }
+        &__title{
+            width: 34px;
+            height:34px;
+            display: flex;
+            border-radius: 50%;
+            border:none;
+            outline:none;
+            background:white;
+            transition:.2s;
+            &:hover{
+                cursor: pointer;
+                background:rgb(236, 236, 236);
+            }
+            &-icon{
+                width: 34px;
+                height:34px;
+                transition:.2s;
+                margin-top: 2px;
+                &._transperent{
+                    opacity: .66;
+                    margin-right: 2.5px;
+                    margin-top: 3px;
+                }
+                &:active{
+                    transform: scale(.7);
+                    fill:grey;
+                }
+            }
+        }
+    }
+    &__dzen{
+        &-main{
+            width:36px;
+            height:36px;
+            border-radius: 50%;
+        }
     }
 }
